@@ -24,6 +24,8 @@ import javax.swing.JButton;
 public class HomePage extends JFrame {
 
 	private JPanel contentPane;
+	
+	int x = 0;
 
 	/**
 	 * Launch the application.

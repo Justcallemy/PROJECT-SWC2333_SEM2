@@ -61,9 +61,9 @@ public class Map extends JFrame {
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				HomePage hp = new HomePage();
+				HomePage hp = new HomePage(); //Connect HomePage Frame
 				hp.show();
-				dispose();
+				dispose(); //Close current frame
 			}
 		});
 		

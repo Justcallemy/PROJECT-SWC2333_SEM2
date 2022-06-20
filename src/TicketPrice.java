@@ -63,7 +63,7 @@ public class TicketPrice extends JFrame {
 		
 		JButton btnNewButton = new JButton("RETURN");
 		btnNewButton.setBackground(new Color(169, 169, 169));
-		btnNewButton.setBounds(303, 446, 70, 25);
+		btnNewButton.setBounds(305, 457, 70, 25);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{

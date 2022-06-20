@@ -212,7 +212,7 @@ public class Ticketing extends JFrame {
 					valueChild = 7.10;
 					valueSeniorCitizen = 7.10;
 					
-		            qtyAdult = Integer.parseInt(SpinnerAdult.getValue().toString());
+		             qtyAdult = Integer.parseInt(SpinnerAdult.getValue().toString());
 		             totalAdult = valueAdult * qtyAdult;
 		             
 		             qtyChild = Integer.parseInt(SpinnerChild.getValue().toString());

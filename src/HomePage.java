@@ -108,7 +108,7 @@ public class HomePage extends JFrame {
 		btnAboutus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				JOptionPane.showMessageDialog(null,"This program & design was created by ABDUL MUHAIMIE AR BAAIN" + "\nAny Problem You Can Call The Number below" + "\n01112826173" + "\nFor more information detail you can got to https://www.zoonegaramalaysia.my/");
+				JOptionPane.showMessageDialog(null,"This program & design was created by ABDUL MUHAIMIE AR BAAIN" + "\nAny Problem You Can Call The Number below" + "\n01112826173" + "\nFor more information detail you can go to https://www.zoonegaramalaysia.my/");
 			}
 		});
 		btnAboutus.setBorder(null);

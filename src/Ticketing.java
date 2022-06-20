@@ -183,6 +183,7 @@ public class Ticketing extends JFrame {
 		pay.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				//declaration
 		        int qtyAdult = 0;
 		        int qtyChild = 0;
 		        int qtySC = 0;
@@ -201,13 +202,12 @@ public class Ticketing extends JFrame {
 		 
 		  
 		        
-		        if(chckbxMalay.isSelected())
+		        if(chckbxMalay.isSelected())//if check box malaysian is selected
 		        {
 		        	
 		        	valueAdult = 17.80;
 					valueChild = 7.10;
-					totalSeniorCitizen = 7.10;
-					valueSeniorCitizen = 16.00;
+					valueSeniorCitizen = 7.10;
 					
 		            qtyAdult = Integer.parseInt(SpinnerAdult.getValue().toString());
 		             totalAdult = valueAdult * qtyAdult;
@@ -244,11 +244,13 @@ public class Ticketing extends JFrame {
 		        	
 		        }
 		        
-		        if(chckbxForeig.isSelected())
+		        if(chckbxForeig.isSelected()) // if check box foreigner is selected
 		        {
+		        	//declaration
+		        	
 		        	valueAdult = 23.70;
 					valueChild = 17.80;
-					valueSeniorCitizen = 16.00;
+					valueSeniorCitizen = 7.10;
 
 					
 					
@@ -265,37 +267,44 @@ public class Ticketing extends JFrame {
 			             total =+  totalAdult + totalChild + totalSeniorCitizen;
 			           
 			           
-			           if(membership1.isSelected())
+			           if(membership1.isSelected()) // if check box membership is selected get 15% discount
 		        		
 		        	{	
 		             totaldiscount = total * discount;
 		             total = total - totaldiscount;
-		             membership = "Zoo Member";
+		             membership = "Zoo Member"; // display membership
 		        	}
 			           
 			           
-			           if(membership2.isSelected())
+			           if(membership2.isSelected()) // if check box not membership is selected dont have any discount 
 			        		
 			        	{
-			             membership = "Not Member";
+			             membership = "Not Member";  // display membership
 			        	}
 			           
 			             
-			           citizen = "Foreigner";
+			           citizen = "Foreigner"; // display foreigner
 			      
 		        }
-		        String quantityAdult = Integer.toString(qtyAdult);
+		        // conver string to double
+		        String quantityAdult = Integer.toString(qtyAdult); 
 				String adultTotal = Double.toString(totalAdult);
 				String quantityChild = Integer.toString(qtyChild);
 				String childTotal = Double.toString(totalChild);
 				String qtySeniorCitizen = Integer.toString(qtySC);
 				String SCTotal = Double.toString(totalSeniorCitizen);
 		        String ttotal = Double.toString(total);
+		        
+		        // get input from textfield
 				String name = txtName.getText();
 				String icpass = txtIcPas.getText();
 				String age = txtAge.getText();
+				
+				// connect to main frame
 	        	Main mn = new Main(name,icpass,age,ttotal,citizen, membership,adultTotal,quantityAdult,quantityChild,childTotal,SCTotal,qtySeniorCitizen);
 	        	mn.setVisible(true);
+	        	
+	        	//close current frame
 	        	dispose();
 			}
 		});

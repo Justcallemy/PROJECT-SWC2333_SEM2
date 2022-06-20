@@ -56,7 +56,7 @@ public class Ticketing extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 425, 505);
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(233, 150, 122));
+		contentPane.setBackground(new Color(210, 180, 140));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -67,7 +67,7 @@ public class Ticketing extends JFrame {
 		txtName.setColumns(10);
 		
 		JLabel Name = new JLabel("NAME");
-		Name.setFont(new Font("Monospaced", Font.BOLD, 10));
+		Name.setFont(new Font("Menlo", Font.PLAIN, 10));
 		Name.setBounds(26, 50, 79, 19);
 		contentPane.add(Name);
 		
@@ -77,28 +77,28 @@ public class Ticketing extends JFrame {
 		txtIcPas.setColumns(10);
 		
 		JLabel IcPas = new JLabel("IC Number/Passport:");
-		IcPas.setFont(new Font("Monospaced", Font.BOLD, 10));
+		IcPas.setFont(new Font("Menlo", Font.PLAIN, 10));
 		IcPas.setBounds(26, 79, 128, 19);
 		contentPane.add(IcPas);
 		
 		JLabel member = new JLabel("Membership :");
-		member.setFont(new Font("Times New Roman", Font.BOLD, 10));
+		member.setFont(new Font("Menlo", Font.PLAIN, 10));
 		member.setBounds(26, 321, 128, 19);
 		contentPane.add(member);
 		
 		JLabel lblCitizen = new JLabel("Citizens");
-		lblCitizen.setFont(new Font("Monospaced", Font.PLAIN, 10));
+		lblCitizen.setFont(new Font("Menlo", Font.PLAIN, 10));
 		lblCitizen.setBounds(26, 137, 128, 19);
 		contentPane.add(lblCitizen);
 		
 		
 		JLabel lblAdult = new JLabel("Adult");
-		lblAdult.setFont(new Font("Times New Roman", Font.BOLD, 10));
+		lblAdult.setFont(new Font("Menlo", Font.PLAIN, 10));
 		lblAdult.setBounds(26, 205, 128, 19);
 		contentPane.add(lblAdult);
 		
 		JLabel lblChildren = new JLabel("Children");
-		lblChildren.setFont(new Font("Times New Roman", Font.BOLD, 10));
+		lblChildren.setFont(new Font("Menlo", Font.PLAIN, 10));
 		lblChildren.setBounds(26, 234, 128, 19);
 		contentPane.add(lblChildren);
 		
@@ -111,7 +111,7 @@ public class Ticketing extends JFrame {
 		contentPane.add(SpinnerChild);
 		
 		JLabel Age = new JLabel("Age");
-		Age.setFont(new Font("Monospaced", Font.BOLD, 10));
+		Age.setFont(new Font("Menlo", Font.PLAIN, 10));
 		Age.setBounds(26, 108, 128, 19);
 		contentPane.add(Age);
 		
@@ -121,12 +121,12 @@ public class Ticketing extends JFrame {
 		txtAge.setColumns(10);
 		
 		JCheckBox membership1 = new JCheckBox("Membership");
-		membership1.setFont(new Font("Times New Roman", Font.PLAIN, 10));
+		membership1.setFont(new Font("Menlo", Font.PLAIN, 10));
 		membership1.setBounds(177, 320, 176, 21);
 		contentPane.add(membership1);
 		
 		JCheckBox membership2 = new JCheckBox("Not Membership");
-		membership2.setFont(new Font("Times New Roman", Font.BOLD, 10));
+		membership2.setFont(new Font("Menlo", Font.PLAIN, 10));
 		membership2.setBounds(177, 352, 176, 21);
 		contentPane.add(membership2);
 		
@@ -139,7 +139,7 @@ public class Ticketing extends JFrame {
 		contentPane.add(deco2);
 		
 		JLabel lblSeniorCitizen = new JLabel("Senior Citizen");
-		lblSeniorCitizen.setFont(new Font("Times New Roman", Font.BOLD, 10));
+		lblSeniorCitizen.setFont(new Font("Menlo", Font.PLAIN, 10));
 		lblSeniorCitizen.setBounds(26, 263, 128, 19);
 		contentPane.add(lblSeniorCitizen);
 		
@@ -148,14 +148,17 @@ public class Ticketing extends JFrame {
 		contentPane.add(SpinnerSC);
 		
 		JCheckBox chckbxMalay = new JCheckBox("Malaysian");
+		chckbxMalay.setFont(new Font("Menlo", Font.PLAIN, 10));
 		chckbxMalay.setBounds(177, 136, 182, 20);
 		contentPane.add(chckbxMalay);
 		
 		JCheckBox chckbxForeig = new JCheckBox("Foreigner");
+		chckbxForeig.setFont(new Font("Menlo", Font.PLAIN, 10));
 		chckbxForeig.setBounds(177, 167, 182, 20);
 		contentPane.add(chckbxForeig);
 		
 		JButton Return = new JButton("Back");
+		Return.setFont(new Font("Menlo", Font.PLAIN, 10));
 		Return.setBackground(new Color(238, 232, 170));
 		Return.setForeground(new Color(0, 0, 0));
 		Return.setBorder(null);
@@ -177,6 +180,7 @@ public class Ticketing extends JFrame {
 		contentPane.add(lblZootTicket);
 		
 		JButton pay = new JButton("PROCEED");
+		pay.setFont(new Font("Menlo", Font.PLAIN, 10));
 		pay.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "PAYMENT", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(255, 0, 0)));
 		pay.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -299,7 +303,7 @@ public class Ticketing extends JFrame {
 				String icpass = txtIcPas.getText();
 				String age = txtAge.getText();
 				
-				// connect to main frame
+				// connect and pass data to main frame constructor
 	        	Main mn = new Main(name,icpass,age,ttotal,citizen, membership,adultTotal,quantityAdult,quantityChild,childTotal,SCTotal,qtySeniorCitizen);
 	        	mn.setVisible(true);
 	        	

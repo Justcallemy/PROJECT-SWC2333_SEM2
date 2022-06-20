@@ -21,7 +21,7 @@ public class TicketPrice extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -46,12 +46,12 @@ public class TicketPrice extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		setLocationRelativeTo(null);
-		ImageIcon img = new ImageIcon(this.getClass().getResource("/zoonegaraticket.jpg"));
+		ImageIcon img = new ImageIcon(this.getClass().getResource("/zoonegaraticket.jpg")); //add image
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(10, 10, 675, 437);
-		panel.setBorder(new TitledBorder(null, "TICKET PRICE", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		panel.setBorder(new TitledBorder(null, "TICKET PRICE", TitledBorder.LEADING, TitledBorder.TOP, null, null)); // add title border
 		panel.setBackground(new Color(160, 82, 45));
 		contentPane.add(panel);
 		panel.setLayout(null);
@@ -67,7 +67,7 @@ public class TicketPrice extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				HomePage hp = new HomePage();
+				HomePage hp = new HomePage(); //connect to homepage frame
 				hp.setVisible(true);
 				dispose();
 			}

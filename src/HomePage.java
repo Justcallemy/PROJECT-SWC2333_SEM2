@@ -25,7 +25,6 @@ public class HomePage extends JFrame {
 
 	private JPanel contentPane;
 	
-	int x = 0;
 
 	/**
 	 * Launch the application.
@@ -109,7 +108,7 @@ public class HomePage extends JFrame {
 		btnAboutus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				JOptionPane.showMessageDialog(null,"This program & design was created by ABDUL MUHAIMIE AR BAAIN" + "\nAny Problem You Can Call The Number" + "\n01112826173");
+				JOptionPane.showMessageDialog(null,"This program & design was created by ABDUL MUHAIMIE AR BAAIN" + "\nAny Problem You Can Call The Number below" + "\n01112826173" + "\nFor more information detail you can got to https://www.zoonegaramalaysia.my/");
 			}
 		});
 		btnAboutus.setBorder(null);

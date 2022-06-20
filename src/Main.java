@@ -130,12 +130,12 @@ public class Main extends JFrame {
 		panel_1_1.add(rdbtnEwallet);
 		
 		JLabel lblTotal = new JLabel("TOTAL :");
-		lblTotal.setFont(new Font("Segoe Print", Font.BOLD, 30));
+		lblTotal.setFont(new Font("Segoe UI", Font.BOLD, 30));
 		lblTotal.setBounds(255, 27, 235, 104);
 		contentPane.add(lblTotal);
 		
 		txtPayment = new JTextField();
-		txtPayment.setFont(new Font("Tahoma", Font.BOLD, 30));
+		txtPayment.setFont(new Font("Segoe UI", Font.BOLD, 30));
 		txtPayment.setBounds(394, 54, 182, 50);
 		contentPane.add(txtPayment);
 		txtPayment.setColumns(10);
@@ -188,13 +188,13 @@ public class Main extends JFrame {
 		contentPane.add(totalPayment);
 		
 		txtPay = new JTextField();
-		txtPay.setFont(new Font("Tahoma", Font.BOLD, 30));
+		txtPay.setFont(new Font("Segoe UI", Font.BOLD, 30));
 		txtPay.setBounds(394, 114, 182, 49);
 		contentPane.add(txtPay);
 		txtPay.setColumns(10);
 		
 		JLabel lblRm = new JLabel("     RM :");
-		lblRm.setFont(new Font("Segoe Print", Font.BOLD, 30));
+		lblRm.setFont(new Font("Segoe UI", Font.BOLD, 30));
 		lblRm.setBounds(255, 87, 235, 104);
 		contentPane.add(lblRm);
 	}

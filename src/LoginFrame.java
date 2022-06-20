@@ -70,7 +70,8 @@ public class LoginFrame extends JFrame {
 		
 		txtUsername = new JTextField();
 		txtUsername.setBorder(null);
-		txtUsername.addFocusListener(new FocusAdapter() { //CREATE USERNAME
+		txtUsername.addFocusListener(new FocusAdapter() { 
+			//create username
 			@Override
 			public void focusGained(FocusEvent e) {
 				if(txtUsername.getText().equals("Username"))

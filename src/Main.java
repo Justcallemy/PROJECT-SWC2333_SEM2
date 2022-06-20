@@ -22,6 +22,8 @@ public class Main extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtPayment;
+	
+	//static declare for void main and main frame constructor 
 	static String name;
 	static String icpass;
 	static String AgeInput;
@@ -34,7 +36,6 @@ public class Main extends JFrame {
 	static String membership;
 	static String sctotal;
 	static String qtysc;
-	private JLabel totalPayment;
 	
 	DecimalFormat df = new DecimalFormat("#0.00");
 	private JTextField txtPay;
@@ -46,6 +47,7 @@ public class Main extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
+					//recieve data from ticketing
 					Main frame = new Main(name,icpass,AgeInput,total, membership,citizen,totalAdult,qtyAdult,quantityChild,childTotal,sctotal,qtysc);
 					frame.setVisible(true);
 				} catch (Exception e) {
@@ -56,17 +58,10 @@ public class Main extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
-	 * @param childTotal 
-	 * @param quantityChild 
-	 * @param quantityAdult 
-	 * @param adultTotal 
-	 * @param citizen 
-	 * @param ttotal2 
-	 * @param icpass 
-	 * @param qtySeniorCitizen 
-	 * @param sCTotal 
+	 * Create the frame. 
 	 */
+	
+	//recieve data from ticketing frame
 	public Main(String name, String icpass, String Age,String ttotal, String citizen, String membership,String adultTotal, String quantityAdult, String quantityChild, String childTotal, String SCTotal, String qtySeniorCitizen) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 275);

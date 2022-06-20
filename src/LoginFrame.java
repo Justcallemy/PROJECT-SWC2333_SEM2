@@ -104,7 +104,7 @@ public class LoginFrame extends JFrame {
 		txtPassword.addFocusListener(new FocusAdapter() { //CREATE PASSWORD
 			@Override
 			public void focusGained(FocusEvent e) {
-				if(txtPassword.getText().equals("Password")) {
+				if(txtPassword.getText().equals("Password")) { //hide password
 				txtPassword.setEchoChar('●');
 				txtPassword.setText("");
 				}
@@ -137,7 +137,6 @@ public class LoginFrame extends JFrame {
 				if(txtUsername.getText().equals("Muhaimie") && txtPassword.getText().equals("emi123")) 
 				{
 					lblloginMessage.setText("");
-					//JOptionPane.showMessageDialog(null,"Login Succesfull :3");
 					HomePage hp = new HomePage();
 					hp.setVisible(true);
 					dispose();
@@ -147,11 +146,11 @@ public class LoginFrame extends JFrame {
 				else if(txtUsername.getText().equals("") || txtUsername.getText().equals("Username") || 
 				txtPassword.getText().equals("") || txtPassword.getText().equals("Password")) 
 				{
-					lblloginMessage.setText("Please input all requirements!");
+					lblloginMessage.setText("Please input all requirements!"); //warning text if user dont input username & password
 				}
 				else 
 				{
-			lblloginMessage.setText("Username and password didn't match! ");
+			lblloginMessage.setText("Username and password didn't match! "); //warning text if username and password didn't match
 			    }
 		}
 	                                                });
@@ -172,11 +171,11 @@ public class LoginFrame extends JFrame {
 		JLabel lblClose = new JLabel("X");
 		lblClose.addMouseListener(new MouseAdapter() { //MOUSE LISTENER
 			@Override
-			public void mouseClicked(MouseEvent e) 
+			public void mouseClicked(MouseEvent e) //if JLabel x is clicked message will pop up for closing application
 			{
 				if(JOptionPane.showConfirmDialog(null, "Are you sure to close this application?","Confirmation",JOptionPane.YES_NO_OPTION) == 0)
 				{
-					LoginFrame.this.dispose();
+					LoginFrame.this.dispose(); //if yes loginframe will close
 				}
 			}
 		});
@@ -192,19 +191,19 @@ public class LoginFrame extends JFrame {
 		contentPane.add(lblloginMessage);
 		
 		JLabel lblLoginIcon = new JLabel(" ");
-		ImageIcon img = new ImageIcon(this.getClass().getResource("/icon2.png"));
+		ImageIcon img = new ImageIcon(this.getClass().getResource("/icon2.png")); //add image
 		lblLoginIcon.setIcon(img);
 		lblLoginIcon.setBounds(42, 97, 55, 40);
 		contentPane.add(lblLoginIcon);
 		
 		JLabel lbliconpass = new JLabel("");
-		ImageIcon img2 = new ImageIcon(this.getClass().getResource("/iconpass3.png"));
+		ImageIcon img2 = new ImageIcon(this.getClass().getResource("/iconpass3.png")); //add image
 		lbliconpass.setIcon(img2);
 		lbliconpass.setBounds(52, 147, 66, 40);
 		contentPane.add(lbliconpass);
 		
 		JLabel lblLoginAccess = new JLabel("");
-		ImageIcon img3 = new ImageIcon(this.getClass().getResource("/iconzoo1.png"));
+		ImageIcon img3 = new ImageIcon(this.getClass().getResource("/iconzoo1.png")); //add image
 		lblLoginAccess.setIcon(img3);
 		lblLoginAccess.setBounds(178, 0, 209, 117);
 		contentPane.add(lblLoginAccess);

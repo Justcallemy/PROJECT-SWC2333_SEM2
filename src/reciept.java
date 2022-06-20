@@ -38,7 +38,7 @@ public class reciept extends JFrame {
 	static String sctotal;
 	static String qtysc;
 	
-	DecimalFormat df = new DecimalFormat("#0.00");
+	DecimalFormat df = new DecimalFormat("#0.00"); //use decimal format
 
 
 	/**
@@ -61,18 +61,8 @@ public class reciept extends JFrame {
 
 	/**
 	 * Create the frame.
-	 * @param icpass 
-	 * @param citizen 
-	 * @param childTotal 
-	 * @param quantityChild 
-	 * @param ttotalpayment 
-	 * @param totalbalance 
-	 * @param qtySeniorCitizen 
-	 * @param sCTotal 
-	 * @param qtyAdult2 
-	 * @param totalAdult2 
-	 * @param total3 
 	 */
+	
 	public reciept(String name, String icpass, String age,String ttotal, String citizen, String membership,String totalAdult, String qtyAdult, String quantityChild, String childTotal, String ttotalpayment, String totalbalance, String SCTotal, String qtySeniorCitizen) {
 		setBackground(new Color(169, 169, 169));
 		setTitle("Reciept");

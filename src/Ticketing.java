@@ -28,8 +28,7 @@ public class Ticketing extends JFrame {
 	private JTextField txtName;
 	private JTextField txtIcPas;
 	private JTextField txtAge;
-	private JCheckBox chckbxMalay;
-	private JCheckBox chckbxForeig;
+
 	
 
 	/**
@@ -92,7 +91,6 @@ public class Ticketing extends JFrame {
 		lblCitizen.setBounds(26, 137, 128, 19);
 		contentPane.add(lblCitizen);
 		
-		String war3 [] = {"Malaysian citizen", "Foreigner"};
 		
 		JLabel lblAdult = new JLabel("Adult");
 		lblAdult.setFont(new Font("Times New Roman", Font.BOLD, 10));
@@ -161,10 +159,10 @@ public class Ticketing extends JFrame {
 		Return.setBackground(new Color(238, 232, 170));
 		Return.setForeground(new Color(0, 0, 0));
 		Return.setBorder(null);
-		Return.addActionListener(new ActionListener() { //CONNECT TO HOMEPAGE
+		Return.addActionListener(new ActionListener() { 
 			public void actionPerformed(ActionEvent e) 
 			{
-				HomePage hp = new HomePage();
+				HomePage hp = new HomePage(); //CONNECT TO HOMEPAGE
 				hp.setVisible(true);
 				dispose();
 				
@@ -204,7 +202,8 @@ public class Ticketing extends JFrame {
 		        
 		        if(chckbxMalay.isSelected())//if check box malaysian is selected
 		        {
-		        	
+		        	//declaration
+		        	//ticket price
 		        	valueAdult = 17.80;
 					valueChild = 7.10;
 					valueSeniorCitizen = 7.10;
@@ -221,7 +220,7 @@ public class Ticketing extends JFrame {
 		             
 		             total =+  totalAdult + totalChild + totalSeniorCitizen;
 		             
-		        	if(membership1.isSelected())
+		        	if(membership1.isSelected()) // if check box membership is selected get 15% discount for malaysian
 		        		
 		        	{
 		        		
@@ -231,7 +230,7 @@ public class Ticketing extends JFrame {
 		             
 		        	}
 		        	
-		        	if(membership2.isSelected())
+		        	if(membership2.isSelected()) // if check box not membership is selected dont have any discount 
 		        		
 		        	{
 		             membership = "Not Member";
@@ -247,27 +246,27 @@ public class Ticketing extends JFrame {
 		        if(chckbxForeig.isSelected()) // if check box foreigner is selected
 		        {
 		        	//declaration
-		        	
+		        	//ticket price
 		        	valueAdult = 23.70;
 					valueChild = 17.80;
 					valueSeniorCitizen = 7.10;
 
 					
 					
-					   qtyAdult = Integer.parseInt(SpinnerAdult.getValue().toString());
+					   qtyAdult = Integer.parseInt(SpinnerAdult.getValue().toString()); //get value from spinner adult for quantity adult
 			           totalAdult = valueAdult * qtyAdult;
 			             
-			           qtyChild = Integer.parseInt(SpinnerChild.getValue().toString());
+			           qtyChild = Integer.parseInt(SpinnerChild.getValue().toString()); //get value from spinner children for quantity children
 			           totalChild = valueChild * qtyChild;
 			             
-			           qtySC = Integer.parseInt(SpinnerSC.getValue().toString());
+			           qtySC = Integer.parseInt(SpinnerSC.getValue().toString()); //get value from spinner senior citizen for quantity children
 			           totalSeniorCitizen = valueSeniorCitizen * qtySC;
 			             
 			             
 			             total =+  totalAdult + totalChild + totalSeniorCitizen;
 			           
 			           
-			           if(membership1.isSelected()) // if check box membership is selected get 15% discount
+			           if(membership1.isSelected()) // if check box membership is selected get 15% discount for foreigner
 		        		
 		        	{	
 		             totaldiscount = total * discount;

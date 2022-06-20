@@ -139,29 +139,30 @@ public class HomePage extends JFrame {
 		panelbackground.setLayout(null);
 		
 		JLabel animal1 = new JLabel("");
-		ImageIcon img = new ImageIcon(this.getClass().getResource("/rimauicon.jpg"));
+		ImageIcon img = new ImageIcon(this.getClass().getResource("/rimauicon.jpg")); //add image for animal 1
 		animal1.setIcon(img);
 		animal1.setBounds(10, 10, 122, 86);
 		panelbackground.add(animal1);
 		
 		JLabel animal2 = new JLabel("");
-		ImageIcon img2 = new ImageIcon(this.getClass().getResource("/gajahicon.jpg"));
+		ImageIcon img2 = new ImageIcon(this.getClass().getResource("/gajahicon.jpg")); //add image for animal 2
 		animal2.setIcon(img2);
 		animal2.setBounds(166, 10, 122, 86);
 		panelbackground.add(animal2);
 		
 		JLabel animal3 = new JLabel("");
-		ImageIcon img3 = new ImageIcon(this.getClass().getResource("/zirafahicon.jpg"));
+		ImageIcon img3 = new ImageIcon(this.getClass().getResource("/zirafahicon.jpg")); //add image for animal 3
 		animal3.setIcon(img3);
 		animal3.setBounds(329, 10, 122, 86);
 		panelbackground.add(animal3);
 		
 		JLabel animal4 = new JLabel("");
-		ImageIcon img4 = new ImageIcon(this.getClass().getResource("/zebraicon.jpg"));
+		ImageIcon img4 = new ImageIcon(this.getClass().getResource("/zebraicon.jpg")); //add image for animal 4
 		animal4.setIcon(img4);
 		animal4.setBounds(478, 10, 122, 86);
 		panelbackground.add(animal4);
 		
+		// add title
 		JLabel rimau = new JLabel("TIGER");
 		rimau.setHorizontalAlignment(SwingConstants.CENTER);
 		rimau.setBounds(10, 97, 122, 13);
@@ -183,25 +184,25 @@ public class HomePage extends JFrame {
 		panelbackground.add(zebra);
 		
 		JLabel animal5 = new JLabel("");
-		ImageIcon img5 = new ImageIcon(this.getClass().getResource("/badakairicon.jpg"));
+		ImageIcon img5 = new ImageIcon(this.getClass().getResource("/badakairicon.jpg")); //add image for animal 5
 		animal5.setIcon(img5);
 		animal5.setBounds(10, 120, 122, 86);
 		panelbackground.add(animal5);
 		
 		JLabel animal6 = new JLabel("");
-		ImageIcon img6 = new ImageIcon(this.getClass().getResource("/merakicon.jpg"));
+		ImageIcon img6 = new ImageIcon(this.getClass().getResource("/merakicon.jpg")); //add image for animal 6
 		animal6.setIcon(img6);
 		animal6.setBounds(166, 120, 122, 86);
 		panelbackground.add(animal6);
 		
 		JLabel animal7 = new JLabel("");
-		ImageIcon img7 = new ImageIcon(this.getClass().getResource("/pandaicon.jpg"));
+		ImageIcon img7 = new ImageIcon(this.getClass().getResource("/pandaicon.jpg")); //add image for animal 7
 		animal7.setIcon(img7);
 		animal7.setBounds(329, 120, 122, 86);
 		panelbackground.add(animal7);
 		
 		JLabel animal8 = new JLabel("");
-		ImageIcon img8 = new ImageIcon(this.getClass().getResource("/oranghutanicon.jpg"));
+		ImageIcon img8 = new ImageIcon(this.getClass().getResource("/oranghutanicon.jpg")); //add image for animal 8
 		animal8.setIcon(img8);
 		animal8.setBounds(478, 120, 122, 86);
 		panelbackground.add(animal8);

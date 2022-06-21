@@ -143,6 +143,22 @@ public class LoginFrame extends JFrame {
 					dispose();
 					
 				}
+				if(txtUsername.getText().equals("Aqil") && txtPassword.getText().equals("aqil123")) 
+				{
+					lblloginMessage.setText("");
+					HomePage hp = new HomePage();
+					hp.setVisible(true);
+					dispose();
+					
+				}
+				if(txtUsername.getText().equals("Atiq") && txtPassword.getText().equals("atiql123")) 
+				{
+					lblloginMessage.setText("");
+					HomePage hp = new HomePage();
+					hp.setVisible(true);
+					dispose();
+					
+				}
 				
 				else if(txtUsername.getText().equals("") || txtUsername.getText().equals("Username") || 
 				txtPassword.getText().equals("") || txtPassword.getText().equals("Password")) 

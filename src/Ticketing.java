@@ -315,7 +315,7 @@ public class Ticketing extends JFrame {
 		contentPane.add(pay);
 		
 		JLabel lblNewLabel = new JLabel("IF MEMBER U GET 15% DISCOUNT");
-		lblNewLabel.setBounds(26, 301, 351, 13);
+		lblNewLabel.setBounds(26, 301, 333, 13);
 		contentPane.add(lblNewLabel);
 		
 		JPanel panel = new JPanel();

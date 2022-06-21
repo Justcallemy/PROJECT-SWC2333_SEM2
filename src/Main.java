@@ -63,6 +63,7 @@ public class Main extends JFrame {
 	
 	//recieve data from ticketing frame
 	public Main(String name, String icpass, String Age,String ttotal, String citizen, String membership,String adultTotal, String quantityAdult, String quantityChild, String childTotal, String SCTotal, String qtySeniorCitizen) {
+		setTitle("PAYMENT PAGE");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 275);
 		contentPane = new JPanel();

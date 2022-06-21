@@ -12,6 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.border.TitledBorder;
+import javax.swing.SwingConstants;
 
 public class TicketPrice extends JFrame {
 
@@ -46,7 +47,7 @@ public class TicketPrice extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		setLocationRelativeTo(null);
-		ImageIcon img = new ImageIcon(this.getClass().getResource("/zoonegaraticket.jpg")); //add image
+		ImageIcon img = new ImageIcon(this.getClass().getResource("/ticket.jpg")); //add image
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
@@ -57,9 +58,15 @@ public class TicketPrice extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel ticket = new JLabel("");
-		ticket.setBounds(62, 23, 559, 387);
+		ticket.setBounds(95, 111, 490, 190);
 		panel.add(ticket);
 		ticket.setIcon(img);
+		
+		JLabel lblNewLabel = new JLabel("TICKET PRICE");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setFont(new Font("Stencil", Font.BOLD, 20));
+		lblNewLabel.setBounds(249, 35, 165, 66);
+		panel.add(lblNewLabel);
 		
 		JButton btnNewButton = new JButton("RETURN");
 		btnNewButton.setBackground(new Color(169, 169, 169));

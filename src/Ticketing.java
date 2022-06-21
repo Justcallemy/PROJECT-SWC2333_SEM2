@@ -322,6 +322,18 @@ public class Ticketing extends JFrame {
 		panel.setBounds(21, 301, 227, 13);
 		contentPane.add(panel);
 		
+		JButton Clear = new JButton("Clear");
+		Clear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				txtName.setText("  ");
+				txtIcPas.setText("  ");
+				txtAge.setText("  ");
+			}
+		});
+		Clear.setBounds(26, 359, 85, 21);
+		contentPane.add(Clear);
+		
 		setLocationRelativeTo(null);
 		
 	}

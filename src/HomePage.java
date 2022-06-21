@@ -46,7 +46,7 @@ public class HomePage extends JFrame {
 	 * Create the frame.
 	 */
 	public HomePage() {
-		setUndecorated(false);
+		setUndecorated(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 652, 698);
 		contentPane = new JPanel();

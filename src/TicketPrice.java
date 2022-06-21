@@ -38,7 +38,7 @@ public class TicketPrice extends JFrame {
 	 * Create the frame.
 	 */
 	public TicketPrice() {
-		setUndecorated(false);
+		setUndecorated(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 705, 518);
 		contentPane = new JPanel();
